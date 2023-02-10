@@ -360,6 +360,17 @@
             </li>
           </ul>
         </div>
+        <div>
+          <label for="mail" class="subscribe">Subscribe</label>
+          <div class="footer-subscribe">
+          <input class="input-subscribe" type="email" name="mail" placeholder="E-mail">
+          <button type="submit" class="subscribe-btn">Subscribe 
+            <svg width="24px" height="24px">
+            <use href="./images/icon/sprite.svg#telegram"></use>
+          </svg>
+        </button>
+      </div>
+        </div>
       </div>
     </div>
   </footer>
@@ -370,7 +381,51 @@
           <use href="./images/icon/sprite.svg#icon-close"></use>
         </svg>
       </button>
-    </div>
+
+
+    <p class="modal-text">Leave your contacts and we will call you back</p>
+    <form autocomplete="off">
+      <ul class="main-nav modal-form ">
+        <li class="modal-list">
+          <label class="modal-label" for="name">Name</label>
+          <div class="icon-in-input">
+          <input class="input-text" type="text" id="name" name="name" playceholder=" ">
+          <svg class="form-icon" width="18px" height="24px">
+            <use href="./images/icon/modal.svg#person"></use>
+          </svg></div>
+        </li>
+        <li class="modal-list">
+        <label class="modal-label" for="phone">Phone</label>
+          <div class="icon-in-input">
+          <input class="input-text" type="phone" id="phone" name="phone" placeholder=" ">
+          <svg class="form-icon" width="18px" height="24px">
+            <use href="./images/icon/modal.svg#phone"></use>
+          </svg></div>
+        </li>
+        <li class="modal-list">
+          <label class="modal-label" for="email">Email</label>
+          <div class="icon-in-input">
+            <input class="input-text" type="email" name="email" id="email" placeholder=" " >
+          <svg class="form-icon" width="18px" height="24px">
+            <use href="./images/icon/modal.svg#email"></use>
+          </svg>
+          </div>  
+        </li>
+      <li class="modal-list">
+        <label class="modal-label" for="comment">Comment</label>
+        <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Text input"></textarea>
+      </li>
+      </ul>  
+
+    <label class="privacy-label" for="policy">
+      <input class="modal-checkbox" type="checkbox" name="policy" id="policy">
+      <span class="checkbox-text">I accept the terms and conditions of the 
+      <a class="link privacy-text" href="#">Privacy Policy </a></span>
+    </label>
+
+    <button class="send-btn" type="submit"><span class="send-text">Send</span></button>
+    </form>
+  </div>
   </div>
   <script src="./js/modal.js"></script>
 </body>
