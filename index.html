@@ -360,23 +360,25 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="form-media">
           <label for="mail" class="subscribe">Subscribe</label>
-          <div class="footer-subscribe">
-          <input class="input-subscribe" type="email" name="mail" placeholder="E-mail">
+          <form class="footer-subscribe">
+          <input class="input-subscribe" type="email" id="mail" name="mail" placeholder="E-mail">
           <button type="submit" class="subscribe-btn">Subscribe 
             <svg width="24px" height="24px">
             <use href="./images/icon/sprite.svg#telegram"></use>
           </svg>
         </button>
-      </div>
+      </form>
         </div>
       </div>
     </div>
   </footer>
+
+
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button href="#" class="close-modal" data-modal-close>
+      <button class="close-modal" data-modal-close>
         <svg class="close" width="8px" height="8px">
           <use href="./images/icon/sprite.svg#icon-close"></use>
         </svg>
@@ -397,7 +399,7 @@
         <li class="modal-list">
         <label class="modal-label" for="phone">Phone</label>
           <div class="icon-in-input">
-          <input class="input-text" type="phone" id="phone" name="phone" placeholder=" ">
+          <input class="input-text" type="tel" id="phone" name="phone" >
           <svg class="form-icon" width="18px" height="24px">
             <use href="./images/icon/modal.svg#phone"></use>
           </svg></div>
